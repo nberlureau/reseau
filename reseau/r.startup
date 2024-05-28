@@ -1,4 +1,4 @@
 cp /shared/Rinterfaces /etc/network/interfaces
-/etc/init.id/networking restart
+/etc/init.d/networking restart
 echo "nameserver 8.8.8.8"> /etc/resolve.conf
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE

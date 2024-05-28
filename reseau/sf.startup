@@ -1,3 +1,3 @@
 cp /shared/SFinterfaces /etc/network/interfaces
-/etc/init.id/networking restart
+/etc/init.d/networking restart
 echo "nameserver 8.8.8.8"> /etc/resolve.conf
