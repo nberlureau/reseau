@@ -1,0 +1,3 @@
+cp /shared/RPinterfaces /etc/network/interfaces
+/etc/init.id/networking restart
+echo "nameserver 8.8.8.8"> /etc/resolve.conf
