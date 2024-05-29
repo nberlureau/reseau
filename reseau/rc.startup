@@ -1,4 +1,5 @@
 cp /shared/RCinterfaces /etc/network/interfaces
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
 apt update
 apt install isc-dhcp-server
 /etc/init.d/networking restart
