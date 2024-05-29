@@ -3,3 +3,6 @@ cp /shared/SFinterfaces /etc/network/interfaces
 echo "nameserver 8.8.8.8"> /etc/resolv.conf
 apt update
 apt install vsftpd
+useradd -m sfadmin
+echo "sfadmin:mdp" | chpasswd
+/etc/init.d/vsftpd start
