@@ -1,0 +1,3 @@
+cp /shared/PCAinterfaces /etc/network/interfaces
+/etc/init.d/networking restart
+echo "nameserver 8.8.8.8"> /etc/resolv.conf
